@@ -48,7 +48,9 @@ const Select = ({ label, value, onChange, children }) => {
       <SelectElement value={value} onChange={onChange}>
         {children}
       </SelectElement>
-      <SelectMask aria-hidden="true">{displayedValue} <Icon id="chevron-down" /></SelectMask>
+      <SelectMask aria-hidden="true">
+        {displayedValue} <Icon id="chevron-down" />
+      </SelectMask>
     </Wrapper>
   );
 };

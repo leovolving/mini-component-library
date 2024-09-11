@@ -41,7 +41,9 @@ const ProgressBar = ({ value, size }) => {
   const Container = sizeToContainer[size];
   return (
     <>
-    <VisuallyHidden><label for="progress-bar">Progress</label></VisuallyHidden>
+      <VisuallyHidden>
+        <label for="progress-bar">Progress</label>
+      </VisuallyHidden>
       <Container id="progress-bar" role="progressbar" aria-valuenow={value}>
         <Progress totalProgress={value} />
       </Container>
