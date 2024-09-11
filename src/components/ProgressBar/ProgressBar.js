@@ -9,6 +9,7 @@ const BaseContainer = styled.div`
   border-radius: 4px;
   width: 370px;
   background-color: ${COLORS.transparentGray15};
+  box-shadow: inset 0px 2px 4px ${COLORS.transparentGray35};
 `;
 
 const SmallContainer = styled(BaseContainer)`
